@@ -5,7 +5,7 @@ A-TWAS is an omnibus tool integrating multiple imputation models with different 
 ## Model Implementation and Data Preparation
 The command for running the model is:
 ```R
-model <- A_TWAS <- (genotype, expression, GWAS_summary, CHR, LD, option = c("BLasso", "Horseshoe", "Horseshoe+"), extra_eQTL_weights = NA)
+model <- A_TWAS(genotype, expression, GWAS_summary, CHR, LD, option = c("BLasso", "Horseshoe", "Horseshoe+"), extra_eQTL_weights = NA)
 ```
 The detailed description of the data that need to be prepared for implementing the model is stated as below:
 1. genotype (genotype information): the genotype information for the imputation model in stage I TWAS should be a dataframe where each row represents a sample and each column represents a SNP; the names of the columns should be the basic position for the corresponding SNPs. Remind that the SNPs of the dataframe should be in the same chromosome.
