@@ -15,3 +15,6 @@ The detailed description of the data that need to be prepared for implementing t
 5. LD (reference LD panel): a dataframe measures the association between the SNPs. The column names of the dataframe should be the basic position of the corresponding SNPs.
 6. option: This parameter is used for choosing which imputation models are used. The choice includes "BLasso", "Horseshoe" and "Horseshoe_plus". By default, all three methods are used in model.
 7. extra_eQTL_weights: this term is optional. If needs to combine the outcome from other imputation models, input a dataframe storing the basic position and the weights of the SNPs. The first column of the dataframe indicating the basic position for the SNPs that the weights corresponding to; the remaining column of the dataframe indicating the weights from each of the external model. The names for the first column should be "BP" and for the remaining column should be the names of the external models.
+
+## Dependency
+A-TWAS is built based on R package "bayesreg" and "ACAT", we sincerely appreciate the authors of these packages.
