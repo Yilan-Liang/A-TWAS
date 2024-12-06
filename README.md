@@ -5,6 +5,7 @@ A-TWAS is an omnibus tool integrating multiple imputation models with different 
 ## Model Implementation and Data Preparation
 The command for running the model is:
 ```R
+source("my_path/A_TWAS.R")
 model <- A_TWAS(genotype, expression, GWAS_summary, CHR, LD, option = c("BLasso", "Horseshoe", "Horseshoe+"), extra_eQTL_weights = NA)
 ```
 The detailed description of the data that need to be prepared for implementing the model is stated as below:
